@@ -1530,4 +1530,88 @@ Wire Wire Line
 	4050 4100 4350 4100
 Wire Wire Line
 	4350 4100 4550 4100
+$Comp
+L BVKSound:Wire J7
+U 1 1 61087ABB
+P 6300 1900
+F 0 "J7" V 6200 2000 50  0000 R CNN
+F 1 "Wire +9V" V 6350 2050 50  0000 R CNN
+F 2 "BVKSound:Wire_Hole" H 6300 1900 50  0001 C CNN
+F 3 "~" H 6300 1900 50  0001 C CNN
+	1    6300 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L BVKSound:Wire J8
+U 1 1 6109245B
+P 6600 1900
+F 0 "J8" V 6500 2000 50  0000 R CNN
+F 1 "Wire +9V" V 6650 2150 50  0000 R CNN
+F 2 "BVKSound:Wire_Hole" H 6600 1900 50  0001 C CNN
+F 3 "~" H 6600 1900 50  0001 C CNN
+	1    6600 1900
+	0    1    1    0   
+$EndComp
+Text GLabel 6300 1600 1    50   Input ~ 0
++9V
+Text GLabel 6600 1600 1    50   Input ~ 0
++9V
+Wire Wire Line
+	6300 1700 6300 1600
+Wire Wire Line
+	6600 1700 6600 1600
+$Comp
+L BVKSound:Pad_Single +9V
+U 1 1 60B07B7C
+P 13050 1650
+F 0 "+9V" H 13188 1547 50  0000 C CNN
+F 1 "Pad_Single" H 13100 1550 50  0001 C CNN
+F 2 "BVKSound:PAD_1_8x4mm_Single" H 13050 1750 50  0001 C CNN
+F 3 "" H 13050 1750 50  0001 C CNN
+	1    13050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BVKSound:Pad_Single -9V
+U 1 1 60B09724
+P 13050 1900
+F 0 "-9V" H 13188 1797 50  0000 C CNN
+F 1 "Pad_Single" H 13100 1800 50  0001 C CNN
+F 2 "BVKSound:PAD_1_8x4mm_Single" H 13050 2000 50  0001 C CNN
+F 3 "" H 13050 2000 50  0001 C CNN
+	1    13050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BVKSound:Pad_Single Gnd
+U 1 1 60B0A1D7
+P 13050 2150
+F 0 "Gnd" H 13188 2047 50  0000 C CNN
+F 1 "Pad_Single" H 13100 2050 50  0001 C CNN
+F 2 "BVKSound:PAD_1_8x4mm_Single" H 13050 2250 50  0001 C CNN
+F 3 "" H 13050 2250 50  0001 C CNN
+	1    13050 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 12950 1900 0    50   Input ~ 0
+-9V
+Text GLabel 12950 1650 0    50   Input ~ 0
++9V
+$Comp
+L power:GND #PWR?
+U 1 1 60B0C0F5
+P 12900 2150
+F 0 "#PWR?" H 12900 1900 50  0001 C CNN
+F 1 "GND" V 12850 2050 50  0001 R CNN
+F 2 "" H 12900 2150 50  0001 C CNN
+F 3 "" H 12900 2150 50  0001 C CNN
+	1    12900 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12950 1650 13050 1650
+Wire Wire Line
+	12950 1900 13050 1900
+Wire Wire Line
+	12900 2150 13050 2150
 $EndSCHEMATC
